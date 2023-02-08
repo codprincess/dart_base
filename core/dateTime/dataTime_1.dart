@@ -66,13 +66,37 @@ void main() {
   // final difference = berlinWallFell.difference(dDay);
   // print(difference.inDays); // 16592
 
-  final moonLanding = DateTime.utc(2023, 1, 31, 20, 18, 04);
-  print(moonLanding);//2023-01-31 20:18:04.000Z
-  final isoDate = moonLanding.toIso8601String();
-  print(isoDate);//2023-01-31T20:18:04.000Z
+  // final moonLanding = DateTime.utc(2023, 1, 31, 20, 18, 04);
+  // print(moonLanding);//2023-01-31 20:18:04.000Z
+  // final isoDate = moonLanding.toIso8601String();
+  // print(isoDate);//2023-01-31T20:18:04.000Z
+  //
+  // final today = DateTime.now();
+  // print(today);//2023-01-31 18:43:07.496521
+  // final fiftyDaysFromNow = today.add(const Duration(days: 50));
+  // print(fiftyDaysFromNow);//2023-03-22 18:43:07.496521
 
-  final today = DateTime.now();
-  print(today);//2023-01-31 18:43:07.496521
-  final fiftyDaysFromNow = today.add(const Duration(days: 50));
-  print(fiftyDaysFromNow);//2023-03-22 18:43:07.496521
+
+  // final moonLanding = DateTime.parse('2023-02-08 05:01:01.234567Z');
+  // //print(DateTime.wednesday);//3 星期三
+  // print(moonLanding.day);//8
+  // print(moonLanding.hour); // 20
+  // print(moonLanding.minute); //18
+  // print(moonLanding.second); //4
+  // print(moonLanding.millisecond); //4
+  // print(moonLanding.microsecond); //567
+
+
+  // final dateUS = DateTime.parse('2023-02-08 20:18:04Z').toLocal();
+  // print(dateUS); // 2023-02-09 04:18:04.000
+  // print(dateUS.timeZoneName); // CST
+  // print(dateUS.timeZoneOffset.inHours); // 8
+  // print(dateUS.timeZoneOffset.inMinutes); // 480
+
+
+  final dateAus = DateTime.parse('2021-11-01 20:18:04Z').toLocal();
+  print(dateAus); // 2021-11-02 07:18:04.000
+  print(dateAus.timeZoneName); // AEDT ( Australian Eastern Daylight Time )
+  print(dateAus.timeZoneOffset.inHours); // 11
+  print(dateAus.timeZoneOffset.inMinutes); // 660
 }
